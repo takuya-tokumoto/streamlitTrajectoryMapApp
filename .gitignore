@@ -1,10 +1,10 @@
-*.csv
+# *.csv
 *.zip
 *.pth
 *.png
 *.pkl
 *.log
-*.json
+# *.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
