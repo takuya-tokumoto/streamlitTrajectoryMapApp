@@ -18,11 +18,6 @@ Folium を使ったインタラクティブな地図上で、対象者（UID）�
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Python 3.10  
-- pip
-
 ### Installation
 
 ```bash
@@ -54,7 +49,7 @@ streamlitTrajectoryMap/
 ## 🎯 Usage
 
 ```bash
-streamlit run app.py
+streamlit run src/startup.py
 ```
 
 1. ブラウザが自動で開きます（http://localhost:8501）  
@@ -85,16 +80,4 @@ streamlit run app.py
 | time   | ISO8601 | 日時 (`YYYY-MM-DDTHH:MM:SS`)       |
 | is_pred| bool    | 予測データか否か                  |
 
----
-
-## 🧪 Testing
-
-- サンプルデータは `create_sample_data()` 内に定義済み  
-- 実データを `data/your_file.csv` に配置すると自動で読み込み可能
-
----
-
-## 📄 License
-
-MIT © Your Name
-```
+- サンプルデータは `create_sample_data()` 内に定義済み
