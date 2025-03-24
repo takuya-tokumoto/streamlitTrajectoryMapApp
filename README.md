@@ -1,4 +1,4 @@
-```markdown
+
 # 施策対象者の移動軌跡可視化アプリ
 
 地図上に「実績（Actual）」と「予測（Predicted）」の移動軌跡を同時にプロットする Streamlit アプリです。  
@@ -20,15 +20,21 @@ Folium を使ったインタラクティブな地図上で、対象者（UID）�
 
 ### Prerequisites
 
-- Python 3.9+  
+- Python 3.10  
 - pip
 
 ### Installation
 
 ```bash
-git clone https://github.com/<あなたのユーザ名>/streamlitTrajectoryMap.git
+git clone https://github.com/takuya-tokumoto/streamlitTrajectoryMap.git
 cd streamlitTrajectoryMap
+```
+
+```bash
+conda create -n {環境名} python=3.10
+conda activate {環境名}
 pip install -r requirements.txt
+
 ```
 
 ---
