@@ -23,9 +23,7 @@ Folium を使ったインタラクティブな地図上で、対象者（UID）�
 ```bash
 git clone https://github.com/takuya-tokumoto/streamlitTrajectoryMap.git
 cd streamlitTrajectoryMap
-```
 
-```bash
 conda create -n {環境名} python=3.10
 conda activate {環境名}
 pip install -r requirements.txt
@@ -38,10 +36,10 @@ pip install -r requirements.txt
 
 ```
 streamlitTrajectoryMap/
-├── app.py                  # Streamlit エントリポイント
+├── src/startup.py          # Streamlitアプリの実行ファイル
 ├── requirements.txt        # Python ライブラリ一覧
 ├── README.md               # 本ドキュメント
-└── data/                   # （オプション）CSV 等の実データ格納フォルダ
+└── datset/                 # CSV 等の実データ格納フォルダ
 ```
 
 ---
@@ -55,6 +53,9 @@ streamlit run src/startup.py
 1. ブラウザが自動で開きます（http://localhost:8501）  
 2. サイドバーから対象者（UID）を選択  
 3. 地図上に「実績（青）」と「予測（赤）」の軌跡が表示  
+
+![image](https://github.com/user-attachments/assets/1d62d937-2886-42e6-80db-902615e3aadf)
+
 
 ---
 
@@ -79,5 +80,3 @@ streamlit run src/startup.py
 | y      | float   | 経度                              |
 | time   | ISO8601 | 日時 (`YYYY-MM-DDTHH:MM:SS`)       |
 | is_pred| bool    | 予測データか否か                  |
-
-- サンプルデータは `create_sample_data()` 内に定義済み
